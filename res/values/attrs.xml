@@ -1,0 +1,63 @@
+<!--
+  Copyright 2011 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<resources>
+
+    <declare-styleable name="AppTheme">
+        
+        <!-- <attr name="textColorPrimary" format="reference" />
+        <attr name="textColorPrimaryInverse" format="reference" />  -->
+        <attr name="pagerTitleStripBackground" format="reference" />
+        
+        <!-- Action Bar icons -->
+        <attr name="listDragShadowBackground" format="reference" />
+        <attr name="actionUp" format="reference" />
+        <attr name="actionIconBookmarks" format="reference" />
+        <attr name="actionIconSearch" format="reference" />
+        <attr name="actionIconStorageSummary" format="reference" />
+        <attr name="actionIconNewFolder" format="reference" />
+        <attr name="actionIconSort" format="reference" />
+        <attr name="actionIconSettings" format="reference" />
+        
+        <!-- Action Mode icons -->
+        <attr name="actionIconCut" format="reference" />
+        <attr name="actionIconCopy" format="reference" />
+        <attr name="actionIconPaste" format="reference" />
+        <attr name="actionIconTrash" format="reference" />
+        <attr name="actionIconZip" format="reference" />
+        <attr name="actionIconShare" format="reference" />
+        <attr name="actionIconRefresh" format="reference" />
+        
+        <!-- ListView Item styles -->
+        <attr name="listItemSelectedBackground" format="reference" />
+        <attr name="listItemPressedBackground" format="reference" />
+        <attr name="listItemTextAppearance" format="reference" />
+        <attr name="listItemDefaultTextColor" format="reference" />
+        <attr name="listItemDetailTextColor" format="reference" />
+        <attr name="listItemSnippetTextColor" format="reference" />
+        <attr name="listItemFileNameTextColor" format="reference" />
+        <attr name="listItemDateTextColor" format="reference" />
+        <attr name="buttonCheckOff" format="reference" />
+        <attr name="buttonCheckOn" format="reference" />
+
+        
+        <!-- File View styles -->
+        <attr name="fileViewFileNameTextColor" format="reference" />
+        <attr name="fileViewFileSizeTextColor" format="reference" />
+        
+    </declare-styleable>
+
+</resources>

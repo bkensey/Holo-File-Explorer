@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<!-- small -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/file_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dip"
+            android:layout_marginRight="16dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dip"
+                android:layout_marginTop="8dip"
+                android:text="File Name"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#333333" />
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/attachment_bg_holo"
+                android:divider="?android:attr/dividerHorizontal"
+                android:orientation="vertical"
+                android:showDividers="middle" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
+
+                    <FrameLayout
+                        android:id="@+id/icon_container"
+                        android:layout_width="48dip"
+                        android:layout_height="48dip"
+                        android:background="#e5e5e5" >
+
+                        <ImageView
+                            android:id="@+id/file_icon"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="center"
+                            android:src="@drawable/ic_icon_folder" />
+
+                        <ProgressBar
+                            android:id="@+id/progress"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:max="100"
+                            android:padding="0dip"
+                            android:visibility="invisible" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/file_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@+id/icon_container"
+                        android:text="file name.extension"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/file_view_name_text_color" />
+
+                    <TextView
+                        android:id="@+id/file_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/file_name"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@+id/icon_container"
+                        android:ellipsize="middle"
+                        android:singleLine="true"
+                        android:text="file size"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/file_view_date_text_color" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="?android:attr/dividerVertical"
+                    android:dividerPadding="8dip"
+                    android:orientation="horizontal"
+                    android:showDividers="middle" >
+
+                    <Button
+                        android:id="@+id/load"
+                        style="@style/File.Button"
+                        android:text="@string/message_view_attachment_load_action"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/cancel"
+                        style="@style/File.Button"
+                        android:text="@string/message_view_attachment_cancel_action"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/info"
+                        style="@style/File.Button"
+                        android:text="@string/message_view_attachment_info_action"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/save"
+                        style="@style/File.Button"
+                        android:text="@string/message_view_attachment_save_action"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/open"
+                        style="@style/File.Button"
+                        android:text="@string/message_view_attachment_open_action"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/md5_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:ellipsize="middle"
+            android:text="MD5"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#333333" />
+
+        <LinearLayout
+            android:id="@+id/md5_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dip"
+            android:layout_marginRight="16dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/attachment_bg_holo"
+                android:divider="?android:attr/dividerHorizontal"
+                android:orientation="vertical"
+                android:showDividers="middle" >
+
+                <!-- <TextView
+                    android:id="@+id/file_md5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="79054025255fb1a26e4bc422aef54eb4"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#333333" />  -->
+				
+                <EditText
+                    android:id="@+id/file_md5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:autoText="false"
+                    android:capitalize="none"
+                    android:gravity="fill_horizontal"
+                    android:hint="Initialize by pressing Generate"
+                    android:scrollHorizontally="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium" >
+                </EditText>
+                
+                <EditText
+                    android:id="@+id/copied_md5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/file_md5"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:autoText="false"
+                    android:capitalize="none"
+                    android:gravity="fill_horizontal"
+                    android:hint="Paste MD5 here"
+                    android:scrollHorizontally="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium" >
+                </EditText>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="?android:attr/dividerVertical"
+                    android:dividerPadding="8dip"
+                    android:orientation="horizontal"
+                    android:showDividers="middle" >
+
+                    <Button
+                        android:id="@+id/md5_generate"
+                        style="@style/File.Button"
+                        android:text="@string/md5_generate"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/md5_compare"
+                        style="@style/File.Button"
+                        android:text="@string/md5_compare"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/permissions_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:ellipsize="middle"
+            android:text="Permissions"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#333333" />
+
+        <LinearLayout
+            android:id="@+id/permissions_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/attachment_bg_holo"
+            android:divider="?android:attr/dividerHorizontal"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:showDividers="middle" >
+
+            <TableLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:stretchColumns="1,2,3,4" >
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:layout_column="2"
+                        android:padding="3dip"
+                        android:text="Read" />
+
+                    <TextView
+                        android:layout_column="3"
+                        android:padding="3dip"
+                        android:text="Write" />
+
+                    <TextView
+                        android:layout_column="4"
+                        android:padding="3dip"
+                        android:text="Excecute" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:padding="3dip"
+                        android:text="User" />
+
+                    <CheckBox
+                        android:id="@+id/userr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="r" />
+
+                    <CheckBox
+                        android:id="@+id/userw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="w" />
+
+                    <CheckBox
+                        android:id="@+id/userx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="x" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:padding="3dip"
+                        android:text="Group" />
+
+                    <CheckBox
+                        android:id="@+id/groupr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="r" />
+
+                    <CheckBox
+                        android:id="@+id/groupw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="w" />
+
+                    <CheckBox
+                        android:id="@+id/groupx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="x" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:padding="3dip"
+                        android:text="Other" />
+
+                    <CheckBox
+                        android:id="@+id/otherr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="r" />
+
+                    <CheckBox
+                        android:id="@+id/otherw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="w" />
+
+                    <CheckBox
+                        android:id="@+id/otherx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="x" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

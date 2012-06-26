@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2011 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_up"
+        android:icon="?attr/actionUp"
+        android:orderInCategory="2"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_up"/>
+    <item
+        android:id="@+id/action_open_bookmarks"
+        android:icon="?attr/actionIconBookmarks"
+        android:orderInCategory="4"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_open_bookmarks"/>
+    <item
+        android:id="@+id/action_search"
+        android:icon="?attr/actionIconSearch"
+        android:orderInCategory="6"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_search"/>
+    <!--
+         <item
+        android:id="@+id/action_storage_summary"
+        android:icon="?attr/actionIconStorageSummary"
+        android:orderInCategory="8"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_storage_summary"/>
+    -->
+    <item
+        android:id="@+id/action_new_folder"
+        android:icon="?attr/actionIconNewFolder"
+        android:orderInCategory="10"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_new_folder"/>
+    <item
+        android:id="@+id/action_sort"
+        android:icon="?attr/actionIconSort"
+        android:orderInCategory="12"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_sort">
+        <menu>
+            <group
+                android:id="@+id/menu_sort_type"
+                android:checkableBehavior="single" >
+                <item
+                    android:id="@+id/sort_alphabetical"
+                    android:checked="true"
+                    android:title="Alphabetical"/>
+                <item
+                    android:id="@+id/sort_last_modified"
+                    android:title="Last Modified"/>
+            </group>
+            <group
+                android:id="@+id/menu_sort_direction"
+                android:checkableBehavior="all" >
+                <item
+                    android:id="@+id/sort_reverse"
+                    android:title="Reverse Sort"/>
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/action_refresh"
+        android:icon="?attr/actionIconRefresh"
+        android:orderInCategory="14"
+        android:showAsAction="never"
+        android:title="@string/action_refresh"/>
+    <item
+        android:id="@+id/action_ro"
+        android:orderInCategory="15"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_ro"/>
+    <item
+        android:id="@+id/action_rw"
+        android:orderInCategory="16"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_rw"/>
+    <item
+        android:id="@+id/action_settings"
+        android:icon="?attr/actionIconSettings"
+        android:orderInCategory="17"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+    <item
+        android:id="@+id/action_exit"
+        android:orderInCategory="18"
+        android:showAsAction="never"
+        android:title="@string/action_exit"/>
+
+</menu>

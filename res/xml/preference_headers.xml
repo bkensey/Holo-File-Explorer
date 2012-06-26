@@ -1,0 +1,14 @@
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+    <header android:fragment="com.holo.fileexplorer.StockPreferenceFragment"
+            android:title="General Settings">
+      <extra android:name="resource" android:value="general_preferences" />
+    </header>
+    <header android:fragment="com.holo.fileexplorer.StockPreferenceFragment"
+            android:title="About">
+      <extra android:name="resource" android:value="about" />
+    </header>
+    <header android:fragment="com.holo.fileexplorer.StockPreferenceFragment"
+            android:title="Experiments">
+      <extra android:name="resource" android:value="experiments_preferences" />
+    </header>
+</preference-headers>

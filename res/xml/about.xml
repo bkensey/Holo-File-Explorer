@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/theme_preferences" >
+         <PreferenceScreen
+            android:key="about"
+            android:summary="Inspiration, Philosophy and Purpose"
+            android:title="About" >
+
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:key="credits"
+            android:summary="Because I didn't write this thing alone"
+            android:title="Credits" >
+
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+</PreferenceScreen>

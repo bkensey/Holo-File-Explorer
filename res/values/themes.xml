@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.Dark" parent="@style/Theme.Sherlock">
+		
+        <!-- ActionBar styles -->
+        <item name="textColorPrimary">@color/abs__primary_text_holo_dark</item>
+        <item name="textColorPrimaryInverse">@color/abs__primary_text_holo_light</item>
+        <item name="pagerTitleStripBackground">@color/pagerTitleDarkBackground</item>
+        
+        <!-- Action Bar icons -->
+        <item name="actionUp">@drawable/ic_action_up_holo_dark</item>
+        <item name="actionIconBookmarks">@drawable/ic_action_bookmarks_holo_dark</item>
+        <item name="actionIconSearch">@drawable/ic_action_search_holo_dark</item>
+        <item name="actionIconStorageSummary">@drawable/ic_action_storage_holo_light</item>
+        <item name="actionIconNewFolder">@drawable/ic_action_new_folder_holo_dark</item>
+        <item name="actionIconSettings">@drawable/ic_action_settings_holo_dark</item>
+        <item name="actionIconRefresh">@drawable/ic_action_refresh_holo_dark</item>
+        <item name="actionIconSort">@drawable/ic_action_sort_holo_dark</item>
+
+        <!-- Action Mode icons -->
+        <item name="actionIconCut">@drawable/ic_action_cut_holo_dark</item>
+        <item name="actionIconCopy">@drawable/ic_action_copy_holo_dark</item>
+        <item name="actionIconPaste">@drawable/ic_action_paste_holo_dark</item>
+        <item name="actionIconTrash">@drawable/ic_action_trash_holo_dark</item>
+        <item name="actionIconZip">@drawable/ic_action_zip_holo_dark</item>
+        <item name="actionIconShare">@drawable/ic_action_share_holo_dark</item>
+
+        <!-- ListView Item styles -->
+        <item name="listItemSelectedBackground">@drawable/list_selected_holo</item>
+        <item name="listItemPressedBackground">@drawable/list_pressed_holo</item>
+        <item name="listItemTextAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="listItemDefaultTextColor">@color/text_test</item>
+        <item name="listItemFileNameTextColor">@color/text_white</item>
+        <item name="listItemDetailTextColor">@color/text_white</item>
+        <item name="listItemDateTextColor">@color/text_light_grey</item>
+        <item name="buttonCheckOff">@drawable/btn_check_off_normal_holo_dark</item>
+        <item name="buttonCheckOn">@drawable/btn_check_on_normal_holo_dark</item>
+        
+         <!-- File View styles -->
+        <item name="fileViewFileNameTextColor">@color/text_black</item>
+        <item name="fileViewFileSizeTextColor">@color/file_view_date_text_color</item>
+        
+        <item name="vpiUnderlinePageIndicatorStyle">@style/CustomUnderlinePageIndicator</item>
+    </style>
+
+    <style name="AppTheme.Light" parent="@style/Theme.Sherlock.Light">
+		
+        <!-- ActionBar styles -->
+        <item name="textColorPrimary">@color/abs__primary_text_holo_light</item>
+        <item name="textColorPrimaryInverse">@color/abs__primary_text_holo_dark</item>
+        <item name="pagerTitleStripBackground">@color/pagerTitleDarkBackground</item>
+        
+        <!-- Action Bar icons -->
+        <item name="actionUp">@drawable/ic_action_up_holo_light</item>
+        <item name="actionIconBookmarks">@drawable/ic_action_bookmarks_holo_light</item>
+        <item name="actionIconSearch">@drawable/ic_action_search_holo_light</item>
+        <item name="actionIconStorageSummary">@drawable/ic_action_storage_holo_light</item>
+        <item name="actionIconNewFolder">@drawable/ic_action_new_folder_holo_light</item>
+        <item name="actionIconSettings">@drawable/ic_action_settings_holo_light</item>        
+        <item name="actionIconRefresh">@drawable/ic_action_refresh_holo_light</item>
+        <item name="actionIconSort">@drawable/ic_action_sort_holo_light</item>
+
+        <!-- Action Mode icons -->
+        <item name="actionIconCut">@drawable/ic_action_cut_holo_light</item>
+        <item name="actionIconCopy">@drawable/ic_action_copy_holo_light</item>
+        <item name="actionIconPaste">@drawable/ic_action_paste_holo_light</item>
+        <item name="actionIconTrash">@drawable/ic_action_trash_holo_light</item>
+        <item name="actionIconZip">@drawable/ic_action_zip_holo_light</item>
+        <item name="actionIconShare">@drawable/ic_action_share_holo_light</item>
+
+        <!-- ListView Item styles -->
+        <item name="listItemSelectedBackground">@drawable/list_selected_holo</item>
+        <item name="listItemPressedBackground">@drawable/list_pressed_holo</item>
+        <item name="listItemTextAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="listItemDefaultTextColor">@color/text_test</item>
+        <item name="listItemFileNameTextColor">@color/text_black</item>
+        <item name="listItemDetailTextColor">@color/text_black</item>
+        <item name="listItemDateTextColor">@color/text_dark_grey</item>
+        <item name="buttonCheckOff">@drawable/btn_check_off_normal_holo_light</item>
+        <item name="buttonCheckOn">@drawable/btn_check_on_normal_holo_light</item>
+        
+         <!-- File View styles -->
+        <item name="fileViewFileNameTextColor">@color/text_black</item>
+        <item name="fileViewFileSizeTextColor">@color/file_view_date_text_color</item>
+        
+        <item name="vpiUnderlinePageIndicatorStyle">@style/CustomUnderlinePageIndicator</item>
+    </style>
+    
+    <style name="AppTheme.Light.DarkActionBar" parent="@style/Theme.Sherlock.Light.DarkActionBar">
+		
+        <!-- ActionBar styles -->
+        <item name="textColorPrimary">@color/abs__primary_text_holo_dark</item>
+        <item name="textColorPrimaryInverse">@color/abs__primary_text_holo_light</item>
+        <item name="pagerTitleStripBackground">@color/pagerTitleDarkBackground</item>
+        
+        <!-- Action Bar icons -->
+        <item name="actionUp">@drawable/ic_action_up_holo_dark</item>
+        <item name="actionIconBookmarks">@drawable/ic_action_bookmarks_holo_dark</item>
+        <item name="actionIconSearch">@drawable/ic_action_search_holo_dark</item>
+        <item name="actionIconStorageSummary">@drawable/ic_action_storage_holo_light</item>
+        <item name="actionIconNewFolder">@drawable/ic_action_new_folder_holo_dark</item>
+        <item name="actionIconSettings">@drawable/ic_action_settings_holo_dark</item>
+        <item name="actionIconRefresh">@drawable/ic_action_refresh_holo_dark</item>
+        <item name="actionIconSort">@drawable/ic_action_sort_holo_dark</item>
+
+        <!-- Action Mode icons -->
+        <item name="actionIconCut">@drawable/ic_action_cut_holo_dark</item>
+        <item name="actionIconCopy">@drawable/ic_action_copy_holo_dark</item>
+        <item name="actionIconPaste">@drawable/ic_action_paste_holo_dark</item>
+        <item name="actionIconTrash">@drawable/ic_action_trash_holo_dark</item>
+        <item name="actionIconZip">@drawable/ic_action_zip_holo_dark</item>
+        <item name="actionIconShare">@drawable/ic_action_share_holo_dark</item>
+
+        <!-- ListView Item styles -->
+        <item name="listItemSelectedBackground">@drawable/list_selected_holo</item>
+        <item name="listItemPressedBackground">@drawable/list_pressed_holo</item>
+        <item name="listItemTextAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="listItemDefaultTextColor">@color/text_test</item>
+        <item name="listItemFileNameTextColor">@color/text_black</item>
+        <item name="listItemDetailTextColor">@color/text_black</item>
+        <item name="listItemDateTextColor">@color/text_dark_grey</item>
+        <item name="buttonCheckOff">@drawable/btn_check_off_normal_holo_light</item>
+        <item name="buttonCheckOn">@drawable/btn_check_on_normal_holo_light</item>
+        
+         <!-- File View styles -->
+        <item name="fileViewFileNameTextColor">@color/text_black</item>
+        <item name="fileViewFileSizeTextColor">@color/file_view_date_text_color</item>
+        
+        <item name="vpiUnderlinePageIndicatorStyle">@style/CustomUnderlinePageIndicator</item>
+    </style>
+    <style name="AppTheme.Identity" parent="@style/Theme.Sherlock.Light.DarkActionBar">
+		
+        <!-- ActionBar styles -->
+        <item name="textColorPrimary">@color/abs__primary_text_holo_dark</item>
+        <item name="textColorPrimaryInverse">@color/abs__primary_text_holo_light</item>
+        <item name="android:actionBarStyle">@style/Widget.Styled.ActionBar</item>
+        <item name="actionBarStyle">@style/Widget.Styled.ActionBar</item>
+        <item name="pagerTitleStripBackground">@color/pagerTitleDarkBackground</item>
+        
+        <!-- Action Bar icons -->
+        <item name="actionUp">@drawable/ic_action_up_holo_dark</item>
+        <item name="actionIconBookmarks">@drawable/ic_action_bookmarks_holo_dark</item>
+        <item name="actionIconSearch">@drawable/ic_action_search_holo_dark</item>
+        <item name="actionIconStorageSummary">@drawable/ic_action_storage_holo_light</item>
+        <item name="actionIconNewFolder">@drawable/ic_action_new_folder_holo_dark</item>
+        <item name="actionIconSettings">@drawable/ic_action_settings_holo_dark</item>
+        <item name="actionIconRefresh">@drawable/ic_action_refresh_holo_dark</item>
+        <item name="actionIconSort">@drawable/ic_action_sort_holo_dark</item>
+
+        <!-- Action Mode icons -->
+        <item name="actionIconCut">@drawable/ic_action_cut_holo_dark</item>
+        <item name="actionIconCopy">@drawable/ic_action_copy_holo_dark</item>
+        <item name="actionIconPaste">@drawable/ic_action_paste_holo_dark</item>
+        <item name="actionIconTrash">@drawable/ic_action_trash_holo_dark</item>
+        <item name="actionIconZip">@drawable/ic_action_zip_holo_dark</item>
+        <item name="actionIconShare">@drawable/ic_action_share_holo_dark</item>
+
+        <!-- ListView Item styles -->
+        <item name="listItemSelectedBackground">@drawable/list_selected_holo</item>
+        <item name="listItemPressedBackground">@drawable/list_pressed_holo</item>
+        <item name="listItemTextAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="listItemDefaultTextColor">@color/text_test</item>
+        <item name="listItemFileNameTextColor">@color/text_black</item>
+        <item name="listItemDetailTextColor">@color/text_black</item>
+        <item name="listItemDateTextColor">@color/text_dark_grey</item>
+        <item name="buttonCheckOff">@drawable/btn_check_off_normal_holo_light</item>
+        <item name="buttonCheckOn">@drawable/btn_check_on_normal_holo_light</item>
+        
+         <!-- File View styles -->
+        <item name="fileViewFileNameTextColor">@color/text_black</item>
+        <item name="fileViewFileSizeTextColor">@color/file_view_date_text_color</item>
+        
+        <item name="vpiUnderlinePageIndicatorStyle">@style/CustomUnderlinePageIndicator</item>
+    </style>
+</resources>

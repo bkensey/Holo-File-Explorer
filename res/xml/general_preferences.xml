@@ -1,0 +1,22 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Look and Feel" >
+        <ListPreference
+            android:dialogTitle="Select Theme"
+            android:defaultValue="identity"
+            android:entries="@array/theme_names"
+            android:entryValues="@array/theme_codes"
+            android:key="theme"
+            android:summary="Pick your theme"
+            android:title="Application Theme" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Other" >
+        <EditTextPreference
+            android:defaultValue="/sdcard"
+            android:dialogTitle="Enter folder path"
+            android:key="home_folder"
+            android:title="Home Folder" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
