@@ -42,7 +42,7 @@
                 android:id="@+id/action_confirm_delete"
                 android:title="@string/action_confirm_delete"/>
             <item
-                android:id="@+id/action_cancel Delete"
+                android:id="@+id/action_cancel_delete"
                 android:title="@string/action_cancel_delete"/>
         </menu>
     </item>
